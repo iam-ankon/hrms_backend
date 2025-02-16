@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details - Print</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .no-print {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h2>Employee Details</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <td>{{ employee.name }}</td>
+        </tr>
+        <tr>
+            <th>Designation</th>
+            <td>{{ employee.designation }}</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>{{ employee.email }}</td>
+        </tr>
+        <tr>
+            <th>Department</th>
+            <td>{{ employee.department }}</td>
+        </tr>
+        <tr>
+            <th>Salary</th>
+            <td>{{ employee.salary }}</td>
+        </tr>
+        <tr>
+            <th>Attendance Delay</th>
+            <td>{{ employee.attendance_delay }}</td>
+        </tr>
+        <tr>
+            <th>Office In Time</th>
+            <td>{{ employee.office_in_time }}</td>
+        </tr>
+        <tr>
+            <th>Office Out Time</th>
+            <td>{{ employee.office_out_time }}</td>
+        </tr>
+    </table>
+
+    <button class="no-print" onclick="window.print()">Print</button>
+</body>
+</html>
