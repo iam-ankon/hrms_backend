@@ -13,6 +13,7 @@ https://docs.djangoproject.com/en/5.1/ref/settings/
 import os
 from pathlib import Path
 
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -44,6 +45,8 @@ INSTALLED_APPS = [
     'corsheaders',
     'employees',
     'employee_details',
+    'employee_status',
+    'hr_work',
     
 ]
 
@@ -150,9 +153,11 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'ar7web47@gmail.com'
-EMAIL_HOST_PASSWORD = 'woal hzmn wihj rauw'
+EMAIL_HOST_PASSWORD = 'tfwk rpny ougy msxi'
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
+
+# EMAIL_SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
 
 JAZZMIN_SETTINGS = {
     # title of the window (Will default to current_admin_site.site_title if absent or None)
@@ -165,7 +170,7 @@ JAZZMIN_SETTINGS = {
     "site_brand": "HR",
 
     # Logo to use for your site, must be present in static files, used for brand on top left
-    "site_logo": "books/img/logo.png",
+    "site_logo": "/Users/iam_ankon/Desktop/IMG_0759.jpg",
 
     # Logo to use for your site, must be present in static files, used for login form logo (defaults to site_logo)
     "login_logo": None,

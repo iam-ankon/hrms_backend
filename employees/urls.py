@@ -10,7 +10,7 @@ router.register('leave', LeaveRequestViewSet)
 router.register('payroll', PayrollViewSet)
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    # path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
-    path('api/login/', LoginView.as_view({'post': 'create'})),
+    # path('api/login/', LoginView.as_view({'post': 'create'})),
 ]
